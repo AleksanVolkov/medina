@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.css">
+<link rel="stylesheet" href="./style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+ 
+ 
+
+<header id="header">
+    <!-- Desktop Version -->
+    <div class="desktop-header">
+        <div class="container">
+            <div class="back_row">
+                <div class="row first-row">
+                    <nav class="menu">
+                        <ul>
+                            <li><a href="#">Фотогалерея</a></li>
+                            <li><a href="#">Наши партнеры</a></li>
+                            <li><a href="#">Прайс</a></li>
+                            <li><a href="#">Новости</a></li>
+                            <li><a href="#">Контакты</a></li>
+                            <li><a href="#">Скидки</a></li>
+                            <li><a href="#">Написать руководству</a></li>
+                        </ul>
+                    </nav>
+                    <button class="search-btn">
+                        <img src="./img/search.svg" alt="Search">
+                        Поиск
+                    </button>
+                </div>
+            </div>
+            <!-- Second Row -->
+            <div class="row second-row">
+                <div class="col">
+                    <div class="address">
+                        <p>г. Раменское, ул. Михалевича, д.49</p>
+                        <a href="#">Показать на карте</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <a href="https://wa.me/84951090330" class="whatsapp-link"></a>
+                </div>
+                <div class="col">
+                    <img src="./img/image.png" alt="Logo" class="logo">
+                </div>
+                <div class="col">
+                    <div class="phone">
+                        <p>8(495)109-03-30</p>
+                        <a href="#">Не дозвонились?</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <button class="action-btn">Вызов врача на дом</button>
+                </div>
+            </div>
+            <!-- Third Row -->
+            <div class="row third-row">
+                <nav class="bottom-menu">
+                    <ul>
+                        <li><a href="#">Взрослое<br> отделение</a></li>
+                        <li><a href="#">Детское<br>  отделение</a></li>
+                        <li><a href="#">Диагностическое <br> отделение</a></li>
+                        <li><a href="#">Лабораторная <br> диагностика</a></li>
+                        <li><a href="#">Косметология</a></li>
+                        <li><a href="#">Стоматология</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile Version -->
+    <div class="mobile-header">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <button class="burger-menu-btn" id="burger-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+                <div class="col">
+                    <a href="tel:1234567890" class="phone-link">
+                        <img src="./img/telephone-call.svg" alt="Phone">
+                    </a>
+                </div>
+                <div class="col">
+                    <img src="./img/logomob.png" alt="Logo" class="logo">
+                </div>
+                <div class="col">
+                    <a href="#" class="map-link">
+                        <img src="./img/pin.svg" alt="Location">
+                    </a>
+                </div>
+                <div class="col">
+                    <button class="search-btn-mobile">
+                        <img src="./img/searchmob.png" alt="Search">
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Burger Menu Overlay -->
+        <div class="burger-menu" id="burger-menu">
+            <button class="close-btn" id="close-btn">&times;</button>
+            <nav class="burger-nav">
+                <ul>
+                    <!-- Menu from desktop first row -->
+                    <li><a href="#">Фотогалерея</a></li>
+                    <li><a href="#">Наши партнеры</a></li>
+                    <li><a href="#">Прайс</a></li>
+                    <li><a href="#">Новости</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">Скидки</a></li>
+                    <li><a href="#">Написать руководству</a></li>
+                    <!-- Menu from desktop third row -->
+                    <li><a href="#">Взрослое отделение</a></li>
+                    <li><a href="#">Детское отделение</a></li>
+                    <li><a href="#">Диагностическое отделение</a></li>
+                    <li><a href="#">Лабораторная диагностика</a></li>
+                    <li><a href="#">Косметология</a></li>
+                    <li><a href="#">Стоматология</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+<section class="wrapper_bread_crumbs">
+<div class="bread_crumbs">
+    <span class="bread_crumbs_home">
+        <a href="">Главная</a>
+    </span>
+    <span class="bread_crumbs_separator"></span>
+    <span class="bread_crumbs_next">
+        <a href="">Новости</a>
+    </span>
+</div>
+</section>
+
+<section class="slider-card-section margin__top">
+    <div class="slide-galllery-wrapper">
+        <h2>Галерея</h2>     
+        
+        <h3 class="gallery_title">
+            Администрация (взрослое)
+        </h3> 
+        <div class="grid_doctors">
+            <div class="doctors_card">
+                <img src="./img/doc3.jpg" alt="Placeholder Image">
+                <div class="doc_info">
+                    <div class="doc_name">Трофимов Константин Сергеевич</div>
+                    <div class="doc_position">Главный врач</div>
+                    <div class="doc_exp">10 лет стажа</div>
+                    <button class="action-btn">Записаться</button>
+                </div>
+                
+            </div>
+            <div class="doctors_card">
+                <img src="./img/doc1.jpg" alt="Placeholder Image">
+                <div class="doc_info">
+                    <div class="doc_name">Гончарова Ольга Александровна</div>
+                    <div class="doc_position">Заведующий терапевтическим отделением</div>
+                    <div class="doc_exp">10 лет стажа</div>
+                    <button class="action-btn">Записаться</button>
+                </div>
+                
+            </div>
+        </div>
+        <div class="slide-doctors">
+                
+            <div class="doctors_card">
+                <img src="./img/doc3.jpg" alt="Placeholder Image">
+                <div class="doc_info">
+                    <div class="doc_name">Трофимов Константин Сергеевич</div>
+                    <div class="doc_position">Главный врач</div>
+                    <div class="doc_exp">10 лет стажа</div>
+                    <button class="action-btn">Записаться</button>
+                </div>
+                
+            </div>
+            <div class="doctors_card">
+                <img src="./img/doc1.jpg" alt="Placeholder Image">
+                <div class="doc_info">
+                    <div class="doc_name">Гончарова Ольга Александровна</div>
+                    <div class="doc_position">Заведующий терапевтическим отделением</div>
+                    <div class="doc_exp">10 лет стажа</div>
+                    <button class="action-btn">Записаться</button>
+                </div>
+                
+            </div>
+              
+
+                
+        </div>  
+            
+         <h3 class="gallery_title">
+            Гастроэнтерология
+        </h3> 
+                <div class="grid_doctors">
+            <div class="doctors_card">
+                <img src="./img/doc3.jpg" alt="Placeholder Image">
+                <div class="doc_info">
+                    <div class="doc_name">Трофимов Константин Сергеевич</div>
+                    <div class="doc_position">Главный врач</div>
+                    <div class="doc_exp">10 лет стажа</div>
+                    <button class="action-btn">Записаться</button>
+                </div>
+                
+            </div>
+             <div class="doctors_card">
+                <img src="./img/no_image.jpg" alt="Placeholder Image">
+                <div class="doc_info">
+                    <div class="doc_name">Трофимов Константин Сергеевич</div>
+                    <div class="doc_position">Главный врач</div>
+                    <div class="doc_exp">10 лет стажа</div>
+                    <button class="action-btn">Записаться</button>
+                </div>
+                
+            </div>
+             <div class="doctors_card">
+                <img src="./img/doc3.jpg" alt="Placeholder Image">
+                <div class="doc_info">
+                    <div class="doc_name">Трофимов Константин Сергеевич</div>
+                    <div class="doc_position">Главный врач</div>
+                    <div class="doc_exp">10 лет стажа</div>
+                    <button class="action-btn">Записаться</button>
+                </div>
+                
+            </div>
+             <div class="doctors_card">
+                <img src="./img/doc3.jpg" alt="Placeholder Image">
+                <div class="doc_info">
+                    <div class="doc_name">Трофимов Константин Сергеевич</div>
+                    <div class="doc_position">Главный врач</div>
+                    <div class="doc_exp">10 лет стажа</div>
+                    <button class="action-btn">Записаться</button>
+                </div>
+                
+            </div>
+            <div class="doctors_card">
+                <img src="./img/doc1.jpg" alt="Placeholder Image">
+                <div class="doc_info">
+                    <div class="doc_name">Гончарова Ольга Александровна</div>
+                    <div class="doc_position">Заведующий терапевтическим отделением</div>
+                    <div class="doc_exp">10 лет стажа</div>
+                    <button class="action-btn">Записаться</button>
+                </div>
+                
+            </div>
+        </div>
+        <div class="slide-doctors ">
+                
+                      <div class="doctors_card">
+                <img src="./img/doc3.jpg" alt="Placeholder Image">
+                <div class="doc_info">
+                    <div class="doc_name">Трофимов Константин Сергеевич</div>
+                    <div class="doc_position">Главный врач</div>
+                    <div class="doc_exp">10 лет стажа</div>
+                    <button class="action-btn">Записаться</button>
+                </div>
+                
+            </div>
+             <div class="doctors_card">
+                <img src="./img/no_image.jpg" alt="Placeholder Image">
+                <div class="doc_info">
+                    <div class="doc_name">Трофимов Константин Сергеевич</div>
+                    <div class="doc_position">Главный врач</div>
+                    <div class="doc_exp">10 лет стажа</div>
+                    <button class="action-btn">Записаться</button>
+                </div>
+                
+            </div>
+             <div class="doctors_card">
+                <img src="./img/doc3.jpg" alt="Placeholder Image">
+                <div class="doc_info">
+                    <div class="doc_name">Трофимов Константин Сергеевич</div>
+                    <div class="doc_position">Главный врач</div>
+                    <div class="doc_exp">10 лет стажа</div>
+                    <button class="action-btn">Записаться</button>
+                </div>
+                
+            </div>
+             <div class="doctors_card">
+                <img src="./img/doc3.jpg" alt="Placeholder Image">
+                <div class="doc_info">
+                    <div class="doc_name">Трофимов Константин Сергеевич</div>
+                    <div class="doc_position">Главный врач</div>
+                    <div class="doc_exp">10 лет стажа</div>
+                    <button class="action-btn">Записаться</button>
+                </div>
+                
+            </div>
+            <div class="doctors_card">
+                <img src="./img/doc1.jpg" alt="Placeholder Image">
+                <div class="doc_info">
+                    <div class="doc_name">Гончарова Ольга Александровна</div>
+                    <div class="doc_position">Заведующий терапевтическим отделением</div>
+                    <div class="doc_exp">10 лет стажа</div>
+                    <button class="action-btn">Записаться</button>
+                </div>
+                
+            </div>
+
+              
+
+                
+        </div>  
+
+    
+       
+         
+            
+    </div>
+
+</section>  
+
+
+<section class="form__wrapper">
+    <div class="form__wrapper_inner_left"></div>
+    <div class="form__wrapper_inner_right">
+        <form class="form_record">
+            <div class="form_record_title">Записаться к специалисту
+                или задать вопрос</div>
+            <div class="form_record_descr">Заполните форму ниже и мы с вами свяжемся</div>
+            <label for="name">Ваше имя</label>
+            <input type="text" placeholder="Введите ваше имя" name="name">
+            <label for="phone">Номер телефона</label>
+            <input type="tel" placeholder="+7 999 999 - 99 - 99" name="phone">
+            <button type="submit" class="action-btn">Записаться</button>
+            <p>Отправляя форму, вы соглашаетесь с условиями пользовательского соглашения и условиями обработки данных</p>
+        </form>
+    </div>
+</section>
+
+
+    <footer>
+        <div class="foo_top">
+        <div class=" foo footer_one">
+            <div class="foo_logo">
+                <img src="./img/image.png" alt="">
+            </div>
+            <div class="foo_alert">Имеются противопоказания необходимо
+проконсультироваться со специалистом</div>
+            <a class="foo_link">Написать руководству</a>
+        </div>
+        <div class="foo footer_two">
+            <div class="foo_title">Навигация</div>
+            <nav>
+                <ul>
+                    <li><a href="">Фотогалерея</a></li>
+                    <li><a href="">Наши партнеры</a></li>
+                    <li><a href="">Прайс</a></li>
+                    <li><a href="">Новости</a></li>
+                    <li><a href="">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="foo footer_three">
+            <div class="foo_title">Направления</div>
+            <nav>
+                <ul>
+                    <li><a href="">Для взрослых</a></li>
+                    <li><a href="">Для детей</a></li>
+                    <li><a href="">Диагностическое отделение</a></li>
+                    <li><a href="">Лабораторная диагностика</a></li>
+                    <li><a href="">Косметология</a></li>
+                    <li><a href="">Стоматология</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="foo footer_four">
+            <div class="foo_title">Контакты</div>
+            <div class="contact_item tel"><a href="tel:+74951090330">+7 (495) 109-03-30</a></div>
+            <div class="contact_item adres">Московская область, г. Раменское, ул. Михалевича, д.49</div>
+            <div class="contact_item mail">info@rammedina.ru</div>
+            <button>Вызов врача на дом</button>
+        </div>
+        </div>
+        <div class="foo_police">
+            Все права защищены. 2025
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.umd.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>

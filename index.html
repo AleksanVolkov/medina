@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.css">
+<link rel="stylesheet" href="./style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+ 
+ 
+
+<header id="header">
+    <!-- Desktop Version -->
+    <div class="desktop-header">
+        <div class="container">
+            <div class="back_row">
+                <div class="row first-row">
+                    <nav class="menu">
+                        <ul>
+                            <li><a href="#">Фотогалерея</a></li>
+                            <li><a href="#">Наши партнеры</a></li>
+                            <li><a href="#">Прайс</a></li>
+                            <li><a href="#">Новости</a></li>
+                            <li><a href="#">Контакты</a></li>
+                            <li><a href="#">Скидки</a></li>
+                            <li><a href="#">Написать руководству</a></li>
+                        </ul>
+                    </nav>
+                    <button class="search-btn">
+                        <img src="./img/search.svg" alt="Search">
+                        Поиск
+                    </button>
+                </div>
+            </div>
+            <!-- Second Row -->
+            <div class="row second-row">
+                <div class="col">
+                    <div class="address">
+                        <p>г. Раменское, ул. Михалевича, д.49</p>
+                        <a href="#">Показать на карте</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <a href="https://wa.me/84951090330" class="whatsapp-link"></a>
+                </div>
+                <div class="col">
+                    <img src="./img/image.png" alt="Logo" class="logo">
+                </div>
+                <div class="col">
+                    <div class="phone">
+                        <p>8(495)109-03-30</p>
+                        <a href="#">Не дозвонились?</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <button class="action-btn">Вызов врача на дом</button>
+                </div>
+            </div>
+            <!-- Third Row -->
+            <div class="row third-row">
+                <nav class="bottom-menu">
+                    <ul>
+                        <li><a href="#">Взрослое<br> отделение</a></li>
+                        <li><a href="#">Детское<br>  отделение</a></li>
+                        <li><a href="#">Диагностическое <br> отделение</a></li>
+                        <li><a href="#">Лабораторная <br> диагностика</a></li>
+                        <li><a href="#">Косметология</a></li>
+                        <li><a href="#">Стоматология</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile Version -->
+    <div class="mobile-header">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <button class="burger-menu-btn" id="burger-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+                <div class="col">
+                    <a href="tel:1234567890" class="phone-link">
+                        <img src="./img/telephone-call.svg" alt="Phone">
+                    </a>
+                </div>
+                <div class="col">
+                    <img src="./img/logomob.png" alt="Logo" class="logo">
+                </div>
+                <div class="col">
+                    <a href="#" class="map-link">
+                        <img src="./img/pin.svg" alt="Location">
+                    </a>
+                </div>
+                <div class="col">
+                    <button class="search-btn-mobile">
+                        <img src="./img/searchmob.png" alt="Search">
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Burger Menu Overlay -->
+        <div class="burger-menu" id="burger-menu">
+            <button class="close-btn" id="close-btn">&times;</button>
+            <nav class="burger-nav">
+                <ul>
+                    <!-- Menu from desktop first row -->
+                    <li><a href="#">Фотогалерея</a></li>
+                    <li><a href="#">Наши партнеры</a></li>
+                    <li><a href="#">Прайс</a></li>
+                    <li><a href="#">Новости</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">Скидки</a></li>
+                    <li><a href="#">Написать руководству</a></li>
+                    <!-- Menu from desktop third row -->
+                    <li><a href="#">Взрослое отделение</a></li>
+                    <li><a href="#">Детское отделение</a></li>
+                    <li><a href="#">Диагностическое отделение</a></li>
+                    <li><a href="#">Лабораторная диагностика</a></li>
+                    <li><a href="#">Косметология</a></li>
+                    <li><a href="#">Стоматология</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+     <!-- Slider Section -->
+<section class="slider-section ">
+    <div class="slider-container">
+        <div class="slick-slider">
+            <div class="slide">
+                <div class="slide-content">
+                    <div class="left">
+                        <h2>Название банера,<br> пример текста</h2>
+                        <p>Выбор клиники и врача – куда более сложная задача, чем, скажем, поиск хорошего автосервиса или интернет-провайдера. </p>
+                        <div class="price">
+                            <span class="current"><span>от</span> 5000 руб.</span>
+                            <span class="old">7000 руб.</span>
+                        </div>
+                        <button class="slider_item_btn">Узнать больше</button>
+                    </div>
+                    <div class="right">
+                        <!-- <img src="./img/195c436e-50ad-4724-be47-386c37484281.png" alt="Slide 1"> -->
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide-content">
+                    <div class="left">
+                        <h2>Название банера,<br> пример текста</h2>
+                        <p>Выбор клиники и врача – куда более сложная задача, чем, скажем, поиск хорошего автосервиса или интернет-провайдера. </p>
+                        <div class="price">
+                            <span class="current"><span>от</span> 5000 руб.</span>
+                            <span class="old">7000 руб.</span>
+                        </div>
+                        <button class="slider_item_btn">Узнать больше</button>
+                    </div>
+                    <div class="right">
+                        <!-- <img src="./img/195c436e-50ad-4724-be47-386c37484281.png" alt="Slide 2"> -->
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide-content">
+                    <div class="left">
+                        <h2>Название банера,<br> пример текста</h2>
+                        <p>Выбор клиники и врача – куда более сложная задача, чем, скажем, поиск хорошего автосервиса или интернет-провайдера. </p>
+                        <div class="price">
+                            <span class="current"><span>от</span> 5000 руб.</span>
+                            <span class="old">7000 руб.</span>
+                        </div>
+                        <button class="slider_item_btn">Узнать больше</button>
+                    </div>
+                    <div class="right">
+                        <!-- <img src="./img/195c436e-50ad-4724-be47-386c37484281.png" alt="Slide 3"> -->
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide-content">
+                    <div class="left">
+                        <h2>Название банера,<br> пример текста</h2>
+                        <p>Выбор клиники и врача – куда более сложная задача, чем, скажем, поиск хорошего автосервиса или интернет-провайдера. </p>
+                        <div class="price">
+                            <span class="current"><span>от</span> 5000 руб.</span>
+                            <span class="old">7000 руб.</span>
+                        </div>
+                        <button class="slider_item_btn">Узнать больше</button>
+                    </div>
+                    <div class="right">
+                        <!-- <img src="./img/195c436e-50ad-4724-be47-386c37484281.png" alt="Slide 4"> -->
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide-content">
+                    <div class="left">
+                        <h2>Название банера,<br> пример текста</h2>
+                        <p>Выбор клиники и врача – куда более сложная задача, чем, скажем, поиск хорошего автосервиса или интернет-провайдера. </p>
+                        <div class="price">
+                            <span class="current"><span>от</span> 5000 руб.</span>
+                            <span class="old">7000 руб.</span>
+                        </div>
+                        <button class="slider_item_btn">Узнать больше</button>
+                    </div>
+                    <div class="right">
+                        <!-- <img src="./img/195c436e-50ad-4724-be47-386c37484281.png" alt="Slide 5"> -->
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide-content">
+                    <div class="left">
+                        <h2>Название банера,<br> пример текста</h2>
+                        <p>Выбор клиники и врача – куда более сложная задача, чем, скажем, поиск хорошего автосервиса или интернет-провайдера. </p>
+                        <div class="price">
+                            <span class="current"><span>от</span> 5000 руб.</span>
+                            <span class="old">7000 руб.</span>
+                        </div>
+                        <button class="slider_item_btn">Узнать больше</button>
+                    </div>
+                    <div class="right">
+                        <!-- <img src="./img/195c436e-50ad-4724-be47-386c37484281.png" alt="Slide 6"> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="navi_block">
+                    <div class="paginat"><span class="active_slide_num">01</span>/<span class="all_slide">06</span></div>
+                <div class="class-arrow"></div>
+        </div>
+    </div>
+</section>
+<section class="slider-card-section">
+    <div class="slider-container">
+        <h2>Последние новости</h2>
+        <div class="slide-card">
+            <div class="card">
+                <img src="./img/Rectangle1.jpg" alt="Placeholder Image">
+                <h3>Пример названия новости</h3>
+               <div class="date-category">
+                    <span class="span_date">19.11.2025</span>
+                    <span class="dot"></span>
+                    <span>Название категории</span>
+                </div>
+                
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voltem accusantium ...</p>
+                <a href="#">Подробнее</a>
+            </div>
+            <div class="card">
+                <img src="./img/Rectangle2.jpg" alt="Placeholder Image">
+                <h3>Пример названия новости</h3>
+               <div class="date-category">
+                    <span class="span_date">19.11.2025</span>
+                    <span class="dot"></span>
+                    <span>Название категории</span>
+                </div>
+                
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voltem accusantium ...</p>
+                <a href="#">Подробнее</a>
+            </div>
+            <div class="card">
+                <img src="./img/Rectangle3.jpg" alt="Placeholder Image">
+                <h3>Пример названия новости</h3>
+               <div class="date-category">
+                    <span class="span_date">19.11.2025</span>
+                    <span class="dot"></span>
+                    <span>Название категории</span>
+                </div>
+                
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voltem accusantium ...</p>
+                <a href="#">Подробнее</a>
+            </div>
+            <div class="card">
+                <img src="./img/Rectangle4.jpg" alt="Placeholder Image">
+                <h3>Пример названия новости</h3>
+               <div class="date-category">
+                    <span class="span_date">19.11.2025</span>
+                    <span class="dot"></span>
+                    <span>Название категории</span>
+                </div>
+              
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voltem accusantium ...</p>
+                <a href="#">Подробнее</a>
+            </div>
+            <div class="card">
+                <img src="./img/Rectangle1.jpg" alt="Placeholder Image">
+                <h3>Пример названия новости</h3>
+               <div class="date-category">
+                    <span class="span_date">19.11.2025</span>
+                    <span class="dot"></span>
+                    <span>Название категории</span>
+                </div>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voltem accusantium ...</p>
+                <a href="#">Подробнее</a>
+            </div>
+        </div>  
+    </div>
+</section>  
+<section class="hero-doc">
+    <div class="doc-img">
+        <img src="./img/imagedoc.jpg" alt="">
+    </div>
+    <div class="doc-name">Трофимов<br>
+        Константин Сергеевич</div>
+    <div class="doc-text">
+        <div class="doc-title"><span>Главрач</span></div>
+        <div class="doc-text_wrapper">
+            <p class="p_first"><img src="./img/“.png" alt="">Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" uffered alteration in some form, by inje (The Extremes of Good and Evil)<br><br> There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised  have suffered alteration in some form, by injected humour, or domisedwords which don't look even.</p>
+            <p class="p_last">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.<br><br>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in trators on the Internet tend to repeat predefined chunks as necessary.</p>
+        </div>
+    </div>
+</section>  
+<section class="multiprof">
+    <div class="multiprof_wrap_text">
+        <div class="multiprof_title">Многопрофильная медицинская клиника «Медина»</div>
+        <div class="multiprof_descr">Поиск клиники для лечения всегда мучительно труден. Еще бы, ведь Вы выбираете кому доверить самое ценное — собственное здоровье и здоровье близких людей. Мы не будем докучать Вам избитыми рекламными фразами, типа «индивидуальный подход» и «высокий профессионализм» — наверное, Вы уже начитались этого на сайтах других мед-учреждений. Нашей клинике не нужны фальшивые лозунги, за многолетний опыт работы, с 2000 года у нее накопилось много реальных достижений, и если Вы рассматриваете мед-центры в Раменском в поисках профессиональной медицинской помощи, клиника «Медина» наверняка удовлетворит всем Вашим требованиям</div>
+    </div>
+        
+    <div class="multiprof_img">
+        <img src="./img/hend.png" alt="">
+    </div>
+</section>  
+<section class="long-text">
+    <img src="./img/Rectangle44.jpg" alt="">
+    <div class="text_wrapper_one">
+        <p class="long_text_title">Мечтаете найти врача, на чьи знания и опыт можно полностью положиться?</p>
+        <p class="long_text_descr"> Докторский состав — гордость клиники «Медина». В числе наших сотрудников — кандидаты медицинских наук, врачи высшей категории, специалисты со стажем практической работы более 10 лет. Подробную информацию о каждом из них Вы можете найти на нашем сайте.</p>
+         <p class="long_text_title">Кому нужна помощь — Вам, Вашему малышу или, может быть, Вашей бабушке?</p>
+        <p class="long_text_descr">«Медина» принимает как взрослых, так и совсем маленьких пациентов. Мы являемся полноценной семейной клиникой, в которой квалифицированную медицинскую помощь могут получить пациенты любого возраста.</p>
+         <p class="long_text_title">Устали бороться со своими недугами в одиночку?</p>
+        <p class="long_text_descr">Обратившись в «Медину», Вы не останетесь один на один со своими проблемами, даже в перерывах между визитами в клинику! У Вас всегда есть возможность оперативно проконсультироваться с лечащим врачом, причем не только «в рабочее время».</p>
+         <p class="long_text_title">Хотите выяснить причину недомогания или планируете профилактическое обследование?</p>
+        <p class="long_text_descr">Диагностическое отделение — особая гордость клиники. Да, только один медицинский центр в Раменском может похвастаться таким оснащением! В распоряжении наших врачей оборудование последнего поколения от компаний «SIEMENS», «GENERAL ELECTRIC» и других именитых производителей. Томографы последнего поколения, аппараты для проведения маммографии и УЗИ позволят выявить малейшие нарушения в работе организма на самой ранней стадии.</p>
+
+       
+    </div>
+    <div class="text_wrapper_two">
+        <p class="long_text_title">Вам необходимо оперативно сдать анализы и как можно быстрее получить результаты?</p>
+        <p class="long_text_descr">В рамках клиник функционирует собственная лаборатория –результаты анализов будут у Вас на руках уже в день обращения.</p>
+         <p class="long_text_title">Требуется справка для бассейна, для детского сада или школы?</p>
+        <p class="long_text_descr">У нас все подобные вопросы Вы можете решить быстро, без проволочек и очередей, пройдя соответствующий осмотр прямо в день обращения.</p>
+         <p class="long_text_title">Нет возможности самим добраться до клиники?</p>
+        <p class="long_text_descr">«Медина» предоставляет удобную услугу «Вызов врача на дом». Наши специалисты имеют всё необходимое оборудование для проведения осмотра и диагностики, что значительно сокращает сроки постановки диагноза и начала лечения. В экстренных случаях мы быстро окажемся рядом — главное, держите наш телефон под рукой!</p>
+         <p class="long_text_title">Мечтаете сделать фигуру безупречной, а лицо молодым и привлекательным?</p>
+        <p class="long_text_descr"> «Медина» стоит на страже не только Вашего здоровья, но и красоты: у нас работает отделение пластической хирургии и лазерной косметологии.</p>
+        
+        <div class="border_text">
+            <p>Согласитесь, далеко не все медцентры в Раменском обладают таким внушительным перечнем услуг. Наша команда сделает все, чтобы сохранить и вернуть утерянное здоровье! Наша главная цель – помочь пациенту! Выявить болезнь и предотвратить ее развитие на самом раннем этапе!</p><br><br>
+            <span class="green-text">МЕДИНА – ОПЫТ И ВЫСОКИЕ ТЕХНОЛОГИИ</span>
+        </div>
+    </div>
+</section>  
+<section class="slider-card-section">
+        <div class="slider-container">
+            <h2>Последние новости</h2>
+            <div class="slide-license">
+                <div class="card license_item">
+                    <a href="./img/ser.jpg" data-fancybox data-caption="">
+                    <img src="./img/serprev.jpg" alt="Placeholder Image">
+                    </a>
+                </div>
+            <div class="card license_item">
+                <a href="./img/ser.jpg" data-fancybox data-caption="">
+                <img src="./img/serprev.jpg" alt="Placeholder Image">
+                </a>
+            </div>
+            <div class="card license_item">
+                <a href="./img/ser.jpg" data-fancybox data-caption="">
+                <img src="./img/serprev.jpg" alt="Placeholder Image">
+                </a>
+            </div>
+            <div class="card license_item">
+                <a href="./img/ser.jpg" data-fancybox data-caption="">
+                <img src="./img/serprev.jpg" alt="Placeholder Image">
+                </a>
+            </div>
+            <div class="card license_item">
+                <a href="./img/ser.jpg" data-fancybox data-caption="">
+                <img src="./img/serprev.jpg" alt="Placeholder Image">
+                </a>
+            </div>
+            </div>  
+                <div class="navi_blocks">
+                <div class="paginat"><span class="active_slide_nums_two">01</span>/<span class="all_slide_two">06</span></div>
+                <div class="class-arrows"></div>
+            </div>  
+    </div>
+</section>  
+        <section class="slider-card-section">
+         <div class="slider-container last">
+                <h2>Противодействие коррупции</h2>
+            
+                
+            <div class="slide-license_two">
+                  
+               <div class="cards">
+                    <a href="#" >
+                    Website and landing page copy with CTAs
+                    </a>
+                </div>
+               <div class="cards">
+                    <a href="#" >
+                    Website and landing page copy with CTAs
+                    </a>
+                </div>
+               <div class="cards">
+                    <a href="#" >
+                    Website and landing page copy with CTAs
+                    </a>
+                </div>
+                <div class="cards">
+                    <a href="#" >
+                    Website and landing page copy with CTAs
+                    </a>
+                </div>
+                <div class="cards">
+                    <a href="#" >
+                    Website and landing page copy with CTAs
+                    </a>
+                </div>
+
+                    
+            </div>  
+                
+                
+        </div>
+   
+    </section>  
+
+    <footer>
+        <div class="foo_top">
+        <div class=" foo footer_one">
+            <div class="foo_logo">
+                <img src="./img/image.png" alt="">
+            </div>
+            <div class="foo_alert">Имеются противопоказания необходимо
+проконсультироваться со специалистом</div>
+            <a class="foo_link">Написать руководству</a>
+        </div>
+        <div class="foo footer_two">
+            <div class="foo_title">Навигация</div>
+            <nav>
+                <ul>
+                    <li><a href="">Фотогалерея</a></li>
+                    <li><a href="">Наши партнеры</a></li>
+                    <li><a href="">Прайс</a></li>
+                    <li><a href="">Новости</a></li>
+                    <li><a href="">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="foo footer_three">
+            <div class="foo_title">Направления</div>
+            <nav>
+                <ul>
+                    <li><a href="">Для взрослых</a></li>
+                    <li><a href="">Для детей</a></li>
+                    <li><a href="">Диагностическое отделение</a></li>
+                    <li><a href="">Лабораторная диагностика</a></li>
+                    <li><a href="">Косметология</a></li>
+                    <li><a href="">Стоматология</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="foo footer_four">
+            <div class="foo_title">Контакты</div>
+            <div class="contact_item tel"><a href="tel:+74951090330">+7 (495) 109-03-30</a></div>
+            <div class="contact_item adres">Московская область, г. Раменское, ул. Михалевича, д.49</div>
+            <div class="contact_item mail">info@rammedina.ru</div>
+            <button>Вызов врача на дом</button>
+        </div>
+        </div>
+        <div class="foo_police">
+            Все права защищены. 2025
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.umd.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
