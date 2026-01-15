@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.css">
@@ -125,13 +126,18 @@
                     <li><a href="#">Контакты</a></li>
                     <li><a href="#">Скидки</a></li>
                     <li><a href="#">Написать руководству</a></li>
+                    <li ><a href="#" class="submenu_open">Oтделения</a>
+                        <ul class="submenu">
+                            <li><a href="#">Взрослое отделение</a></li>
+                            <li><a href="#">Детское отделение</a></li>
+                            <li><a href="#">Диагностическое отделение</a></li>
+                            <li><a href="#">Лабораторная диагностика</a></li>
+                            <li><a href="#">Косметология</a></li>
+                            <li><a href="#">Стоматология</a></li>
+                        </ul>
+                    </li>
                     <!-- Menu from desktop third row -->
-                    <li><a href="#">Взрослое отделение</a></li>
-                    <li><a href="#">Детское отделение</a></li>
-                    <li><a href="#">Диагностическое отделение</a></li>
-                    <li><a href="#">Лабораторная диагностика</a></li>
-                    <li><a href="#">Косметология</a></li>
-                    <li><a href="#">Стоматология</a></li>
+                   
                 </ul>
             </nav>
         </div>
@@ -259,9 +265,9 @@
                 или задать вопрос</div>
             <div class="form_record_descr">Заполните форму ниже и мы с вами свяжемся</div>
             <label for="name">Ваше имя</label>
-            <input type="text" placeholder="Введите ваше имя" name="name">
+            <input type="text" placeholder="Введите ваше имя" id="name">
             <label for="phone">Номер телефона</label>
-            <input type="tel" placeholder="+7 999 999 - 99 - 99" name="phone">
+            <input type="tel" placeholder="+7 999 999 - 99 - 99" id="phone">
             <button type="submit" class="action-btn">Записаться</button>
             <p>Отправляя форму, вы соглашаетесь с условиями пользовательского соглашения и условиями обработки данных</p>
         </form>

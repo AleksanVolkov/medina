@@ -125,13 +125,16 @@
                     <li><a href="#">Контакты</a></li>
                     <li><a href="#">Скидки</a></li>
                     <li><a href="#">Написать руководству</a></li>
-                    <!-- Menu from desktop third row -->
-                    <li><a href="#">Взрослое отделение</a></li>
-                    <li><a href="#">Детское отделение</a></li>
-                    <li><a href="#">Диагностическое отделение</a></li>
-                    <li><a href="#">Лабораторная диагностика</a></li>
-                    <li><a href="#">Косметология</a></li>
-                    <li><a href="#">Стоматология</a></li>
+                    <li ><a href="#" class="submenu_open">Oтделения</a>
+                        <ul class="submenu">
+                            <li><a href="#">Взрослое отделение</a></li>
+                            <li><a href="#">Детское отделение</a></li>
+                            <li><a href="#">Диагностическое отделение</a></li>
+                            <li><a href="#">Лабораторная диагностика</a></li>
+                            <li><a href="#">Косметология</a></li>
+                            <li><a href="#">Стоматология</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -151,7 +154,7 @@
 
 <section class="slider-card-section margin__top">
     <div class="slide-galllery-wrapper">
-        <h2>Галерея</h2>     
+        <h2>Наши врачи</h2>     
         
         <h3 class="gallery_title">
             Администрация (взрослое)
@@ -335,9 +338,9 @@
                 или задать вопрос</div>
             <div class="form_record_descr">Заполните форму ниже и мы с вами свяжемся</div>
             <label for="name">Ваше имя</label>
-            <input type="text" placeholder="Введите ваше имя" name="name">
+            <input type="text" placeholder="Введите ваше имя" id="name">
             <label for="phone">Номер телефона</label>
-            <input type="tel" placeholder="+7 999 999 - 99 - 99" name="phone">
+            <input type="tel" placeholder="+7 999 999 - 99 - 99" id="phone">
             <button type="submit" class="action-btn">Записаться</button>
             <p>Отправляя форму, вы соглашаетесь с условиями пользовательского соглашения и условиями обработки данных</p>
         </form>

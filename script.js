@@ -32,7 +32,7 @@ let currentSlide,
         speed: 1000,
         slidesToShow: 1,
         slidesToScroll: 1,
-        autoplay:true,
+        autoplay:false,
          autoplaySpeed:4000,
          appendArrows: $('.class-arrow'),
         prevArrow: '<button type="button"  class="slick-prev"></button>',
@@ -245,7 +245,7 @@ $('.slide-license').on('beforeChange', function(event, slick, currentSlide, next
             centerMode: false,
             
             
-              slidesToShow: 2
+              slidesToShow: 1
             }
           },
     
@@ -334,6 +334,17 @@ $('.doc_schedule_slider_wrapper').slick({
       
         responsive: [
           {
+            breakpoint: 1200,
+            settings: {
+              arrows: false,
+               dots:true,
+            centerMode: false,
+            
+            
+              slidesToShow: 3
+            }
+          },
+          {
             breakpoint: 768,
             settings: {
               arrows: false,
@@ -341,7 +352,7 @@ $('.doc_schedule_slider_wrapper').slick({
             centerMode: false,
             
             
-              slidesToShow: 2
+              slidesToShow: 3
             }
           },
           {
@@ -350,9 +361,9 @@ $('.doc_schedule_slider_wrapper').slick({
               arrows: false,
                dots:true,
             centerMode: false,
+            infinite:false,
             
-            
-              slidesToShow:2
+              slidesToShow:2.5
             }
           },
     
@@ -404,10 +415,117 @@ $('.dep_schedule_slide').slick({
             centerMode: false,
             
             
-              slidesToShow:2
+              infinite:false,
+            
+              slidesToShow:2.5
             }
           },
     
         ],
         
     });
+
+$(document).ready(function(){
+  if ($(window).width() < 1210) { // Только если ширина больше 768px
+    $('.gallery_dep_grid').slick({
+       dots:false,
+    
+         centerMode: false,
+        
+        
+        slidesToShow: 2,
+   
+         draggable: false,
+     
+        arrows: false,
+        // autoplay:true,
+       
+      
+        responsive: [
+          {
+            breakpoint: 1200,
+            settings: {
+              arrows: false,
+               dots:true,
+            centerMode: false,
+            
+            
+              slidesToShow: 4
+            }
+          },
+          
+          {
+            breakpoint: 768,
+            settings: {
+              arrows: false,
+               dots:true,
+            centerMode: false,
+            
+            
+              slidesToShow: 2
+            }
+          },
+          
+    
+        ]
+        
+    });
+
+  } 
+});
+    
+
+    $('.slide_news_page').slick({
+        dots: false,
+        infinite: true,
+        speed: 1000,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        arrows: false,
+        autoplay:false,
+        autoplaySpeed:4000,
+        draggable: false,
+        responsive: [
+          {
+            breakpoint: 1200,
+            settings: {
+              arrows: false,
+            autoplay:true,
+            draggable: true,
+            
+              slidesToShow: 3
+            }
+          },
+          {
+            breakpoint: 768,
+            settings: {
+              arrows: false,
+            
+            autoplay:true,
+            draggable: true,
+            dots: true,
+            
+              slidesToShow: 1
+            }
+          },
+          
+    
+        ],
+        
+    });
+
+
+    let submenuOpen = document.querySelectorAll('.submenu_open')
+
+    submenuOpen.forEach(item=>{
+      item.addEventListener('click',(e)=>{
+        let target=  e.target
+      
+        if(target && target.classList.contains('submenu_open')){
+          
+            console.log(target)
+          item.classList.toggle('open')
+        }
+        
+      })
+    })
